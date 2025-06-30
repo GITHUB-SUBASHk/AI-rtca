@@ -12,7 +12,7 @@ from client.advanced_tone_model import analyze_tone
 from server.logs.message_logger import MessageLogger
 from client.privacy_guard import PrivacyGuard
 from ai.filter_nlp import sanitize_message
-from client.ai.context_vectorizer import get_context_vector
+from client.context_vectorizer import get_context_vector
 
 def generate_reply(message, user):
     """
