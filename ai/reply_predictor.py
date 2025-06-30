@@ -42,17 +42,19 @@ def generate_reply(message, user):
     # Hybrid logic
     if use_server:
         try:
-            server_reply = get_llm_reply(sanitized, backend="ollama", tone=tone, context_vector=context_vector)
+            server_reply = get_llm_reply(
+                sanitized, backend="ollama", tone=tone, context_vector=context_vector
+            )
             if local_refine:
                 # Optionally refine server reply locally
                 return rewrite_tone(server_reply, target_tone=tone)
             return server_reply
         except Exception as e:
-            # Fallback to local reply if server fails
             print(f"[ReplyPredictor] Server LLM failed: {e}")
+            # Fallback to local reply if server fails
             return generate_local_reply(sanitized, tone=tone, context=messages)
     elif use_local:
         return generate_local_reply(sanitized, tone=tone, context=messages)
     else:
         # Default to local reply (safe fallback)
-        return generate_local_reply(sanitized,
+        return generate_local_reply(sanitized, tone=tone, context=messages)
