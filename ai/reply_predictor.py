@@ -10,7 +10,7 @@ from ai.local_small_llm import generate_local_reply, rewrite_tone
 from server.llm_interface import get_llm_reply
 from client.advanced_tone_model import analyze_tone
 from server.logs.message_logger import MessageLogger
-from client.utils.privacy_guard import PrivacyGuard
+from client.privacy_guard import PrivacyGuard
 from client.ai.filter_nlp import sanitize_message
 from client.ai.context_vectorizer import get_context_vector
 
