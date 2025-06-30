@@ -1,0 +1,14 @@
+{
+  "messages": [
+    {
+      "timestamp": "2025-06-26T14:09:36.975754",
+      "type": "sent",
+      "content": "hi"
+    },
+    {
+      "timestamp": "2025-06-26T14:09:37.017343",
+      "type": "received",
+      "content": "Noted."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+cryptography
+requests
+pydantic
+pytest
+colorama

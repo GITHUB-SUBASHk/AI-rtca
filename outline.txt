@@ -1,0 +1,49 @@
+# Project Outline
+
+## Goal
+
+A modular, privacy-first chat system with AI-powered replies, supporting both terminal and web interfaces, and extensible for future AI and privacy features.
+
+---
+
+## Key Modules
+
+- **ai/**
+    - Local and server-based AI reply logic
+    - Tone/style rewriting
+- **client/**
+    - Terminal chat client
+    - Privacy guard and context vectorizer
+- **server/**
+    - Multi-client threaded chat server
+    - LLM interface (local/remote)
+    - Context manager for conversation history
+    - Per-user logging (with optional encryption)
+- **shared/**
+    - Utilities, constants, encryption helpers
+- **web/**
+    - FastAPI REST API for chat/AI
+    - Browser-based chat demo
+- **tests/**
+    - Unit and integration tests for all major modules
+
+---
+
+## Extensibility
+
+- Swap in new AI models (OpenAI, Ollama, local transformers)
+- Add more privacy features (anonymization, stats)
+- Expand web API for admin, analytics, or group chat
+- Add more advanced logging or analytics
+
+---
+
+## Future Ideas
+
+- User authentication and roles
+- Group chat and channels
+- Real-time WebSocket support
+- Advanced NLP features (summarization, translation)
+- Admin dashboard for monitoring
+
+---
