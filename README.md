@@ -44,7 +44,10 @@ tests/
     test_reply_predictor.py    # AI reply tests
 web/
     web_api.py                 # FastAPI REST API
-    web_demo.html              # Browser chat demo
+    static
+static.index.html
+static.custom.css
+static.app.js              # Browser chat demo
 ```
 
 ---
