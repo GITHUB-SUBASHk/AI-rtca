@@ -1,10 +1,25 @@
+# FastAPI framework & ASGI server
 fastapi==0.110.0
 uvicorn[standard]==0.29.0
+
+# Natural Language Processing
 textblob==0.18.0
+
+# Security / Logging
 cryptography==42.0.5
+
+# WebSocket support
 websockets==12.0
+
+# Env management
 python-dotenv==1.0.1
+
+# File I/O (for async operations, needed by FastAPI static files)
 aiofiles==23.2.1
+
+# HTTP client (commonly used, and for TextBlob updates too)
 requests==2.31.0
+
+# ML dependencies
 scikit-learn>=1.4.0
-numpy>=1.24
+numpy>=1.24.0
