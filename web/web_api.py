@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 # Serve the frontend static files
-app.mount("/", StaticFiles(directory="web/static", html=True), name="static")
+app.mount("/ui", StaticFiles(directory="web/static", html=True), name="static")
 
 @app.post("/generate-reply")
 async def generate_reply_endpoint(request: Request):
